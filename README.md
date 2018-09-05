@@ -4,10 +4,9 @@ Dockerized node webservice that convert web page into PDF
 
 ## Build the Docker image
 ```console
-mkdir PDFr
-cp PDFr
-git clone THIS_REPO
-docker build --tag=PDFr .
+git clone https://github.com/dynamicnet/pdfr.git
+cd pdfr
+docker build --tag=pdfr .
 ```
 
 ## Run the container
@@ -15,7 +14,7 @@ docker build --tag=PDFr .
 docker run -d \
   -p 3000:3000 \
   --name PDFr \
-  PDFr
+  pdfr
 ```
 
 ## Parameters
